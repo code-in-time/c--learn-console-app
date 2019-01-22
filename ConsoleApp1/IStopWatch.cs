@@ -3,5 +3,7 @@
     interface IStopWatch
     {
         void StartTimer();
+
+        void StopTimer();
     }
 }

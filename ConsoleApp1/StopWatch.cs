@@ -28,6 +28,8 @@ namespace ConsoleApp1
             while (Console.Read() != 'q') ;
         }
 
+        //public override void StopTimer();
+
         private static void OnTimedEvent(object source, ElapsedEventArgs e, StopWatch stopWatch)
         {
             Console.WriteLine("Hello World!", source);
