@@ -4,12 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ConsoleApp1
+namespace ConsoleApp1.models
 {
-    class Analogue : StopWatch
+    class WatchSettings
     {
-        public Analogue(models.WatchSettings ws) : base(ws)
-        {
-        }
+        public string Name { get; set; }
+        public Int64 Count { get; set; }
     }
 }

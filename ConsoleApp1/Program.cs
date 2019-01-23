@@ -11,8 +11,14 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            IStopWatch s = new Analogue("wwwwww");
+            IWatch s = new Analogue(new models.WatchSettings { Count = 3, Name = "h1"});
             s.StartTimer();
+
+            IWatch x = new Analogue(new models.WatchSettings { Count = 88, Name = "b3" });
+            x.StartTimer();
+
+            Console.WriteLine("Press \'q\' to quit the sample.");
+            while (Console.Read() != 'q') ;
         }
 
     }
