@@ -6,8 +6,9 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp1
 {
-    class Analogue : StopWatch
+    class Analogue : StopWatch, IWatch
     {
+
         public Analogue(models.WatchSettings ws) : base(ws)
         {
         }
